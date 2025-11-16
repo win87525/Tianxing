@@ -1,0 +1,113 @@
+/*div內的輪播覆蓋整個空間 */
+.fade-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+
+/* 讓淡入淡出區域 100% 填滿*/
+.fade-slides,
+.fade-slide {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* 圖片自動符合高度 */
+.fade-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fade-slide .text_card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  max-width: 700px;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+.fade-slide .text_card.text_card2 {
+  width: 90%;
+  max-width: 800px;
+  background-color: #1f2a66;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.fade-slide .text_card.text_card2 img {
+  width: 100%;
+  height: auto;
+}
+/* text_card 基本樣式：開始時透明 + 往下 */
+.text_card img,
+.text_card p {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: 0.5s; /* 稍微延遲，可自行調整 */
+}
+.text_card p {
+  transition-delay: 0.7s; /* 稍微延遲，可自行調整 */
+}
+
+/* active 的 slide 文字要淡入 + 往上歸位 */
+.fade-slide.active .text_card img,
+.fade-slide.active .text_card p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide p {
+  color: #fff;
+}
+
+/* 按鈕 */
+.fade-slider:hover .fade-prev,
+.fade-slider:hover .fade-next {
+  opacity: 1;
+}
+.fade-prev,
+.fade-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  padding-top: 0;
+  cursor: pointer;
+  transition: 0.3s all;
+  opacity: 0;
+}
+.fade-prev:hover,
+.fade-next:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fade-prev {
+  left: 10px;
+}
+.fade-next {
+  right: 10px;
+}
+
+/* 淡入淡出效果 */
+.fade-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.fade-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
