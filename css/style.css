@@ -119,6 +119,45 @@ img {
     right: 80px;
   }
 }
+.sec11 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(205deg, #063152 0%, #0f73b6 60%, #00a3ff 100%);
+  padding-top: 10vh;
+}
+.sec11 .web .text_box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sec11 .web {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  padding: 80px;
+  padding-bottom: 0;
+}
+
+.sec11 .web .anniversary_logo {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 10%;
+  max-width: 200px;
+}
+@media (768px<width<1200px) {
+  .sec11 .web {
+    padding-top: 5vh;
+  }
+  .sec11 .web .anniversary_logo {
+    top: 40px;
+    right: 80px;
+  }
+}
 
 .sec2 .web {
   width: 100%;
@@ -375,25 +414,25 @@ img {
   aspect-ratio: 19/27;
 }
 
-.sec9 {
+.sec9 .web {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
 }
 
-.sec9 .left_box {
+.sec9 .web .left_box {
   width: 55%;
   aspect-ratio: 1162/1081;
 }
 
-.sec9 .left_box img {
+.sec9 .web .left_box img {
   /* object-fit: cover; */
   /* height: 100%; */
   width: 100%;
 }
 
-.sec9 .right_box {
+.sec9 .web .right_box {
   width: 45%;
   padding: 40px;
   display: flex;
@@ -404,18 +443,18 @@ img {
   background-color: #ebf3fb;
 }
 
-.sec9 .right_box .text_box {
+.sec9 .web .right_box .text_box {
   width: 80%;
   max-width: 400px;
   margin-bottom: 20%;
 }
 
-.sec9 .logo {
+.sec9 .web .logo {
   width: 30%;
   max-width: 200px;
 }
 
-.sec11 {
+.sec12 .web {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -423,28 +462,28 @@ img {
   display: grid;
   grid-template-columns: 3fr 8fr;
 }
-.sec11 .left_box {
+.sec12 .web .left_box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.sec11 .left_box img:first-child {
+.sec12 .web .left_box img:first-child {
   width: 100%;
   max-width: 100px;
   margin: 0 auto;
 }
-.sec11 .left_box img:nth-child(2) {
+.sec12 .web .left_box img:nth-child(2) {
   width: 50%;
   max-width: 30px;
   margin: 0 auto;
 }
-.sec11 .form-box {
+.sec12 .web .form-box {
   width: 100%;
   font-family: "Noto Sans TC", sans-serif;
   color: #0a1a52; /* 深藍字 */
 }
 
-.sec11 .form-row {
+.sec12 .web .form-row {
   border: 1px solid #dfe5f0;
   padding: 12px 16px;
   margin-bottom: 10px;
@@ -453,17 +492,17 @@ img {
   display: flex;
   gap: 10px;
 }
-.sec11 .form-row:last-child {
+.sec12 .web .form-row:last-child {
   flex-direction: column;
 }
-.sec11 .label-text {
+.sec12 .web .label-text {
   display: block;
   font-size: 17px;
   font-weight: 600;
   white-space: nowrap;
 }
 
-.sec11 .form-row input[type="text"] {
+.sec12 .web .form-row input[type="text"] {
   width: 100%;
   border: none;
   outline: none;

@@ -1,4 +1,4 @@
-const sections = ['sec1', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7', 'sec8', 'sec9', 'sec11'];
+const sections = ['sec1', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7', 'sec8', 'sec9','sec10', 'sec11','sec12'];
 
 sections.forEach(section => {
   fetch(`sections/${section}.html`)
