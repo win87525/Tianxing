@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <title>德林天行｜天未見 行先行</title>
     <meta property="og:title" content="德林天行｜天未見 行先行" />
     <meta name="twitter:title" content="德林天行｜天未見 行先行" />
@@ -24,7 +24,7 @@
     <meta property="og:image" content="/image/cover_image" />
     <meta property="twitter:image" content="/image/cover_image" />
 
-    <link rel="shortcut icon" href="/images/favicon.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.webp" type="image/x-icon" />
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/slides.css" />
@@ -46,11 +46,17 @@
 
     <script src="js/load-sections.js"></script>
     <script src="js/slides.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/map-scroll.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", adjustSec3Scroll);
+      window.addEventListener("resize", adjustSec3Scroll);
     </script>
   </body>
 </html>

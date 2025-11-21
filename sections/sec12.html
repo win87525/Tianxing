@@ -1,25 +1,25 @@
 <div class="sec12">
   <div class="web">
     <div class="left_box">
-      <img src="/images/contact-h.webp" alt="德林天行" />
-      <img src="/images/s12-text.webp" alt="網路預約" />
+      <img loading="lazy" src="/images/contact-h.webp" alt="德林天行" />
+      <img loading="lazy" src="/images/s12-text.webp" alt="網路預約" />
       <h2 hidden>德林天行_聯絡表單</h2>
     </div>
     <div class="right_box">
-      <form action="" class="form-box mb-4">
+      <form id="webForm" class="form-box mb-4 myForm">
         <label class="form-row">
           <span class="label-text">姓名</span>
-          <input type="text" />
+          <input type="text" name="name" />
         </label>
 
         <label class="form-row">
           <span class="label-text">手機</span>
-          <input type="text" />
+          <input type="text" name="phone" />
         </label>
 
         <label class="form-row">
           <span class="label-text">信箱</span>
-          <input type="text" />
+          <input type="text" name="email" />
         </label>
 
         <div class="form-row">
@@ -47,32 +47,43 @@
             >
           </div>
         </div>
+        <button type="submit">送出</button>
       </form>
-      <img src="/images/s12-map.webp" class="w-100" alt="德林天行_google地圖位置" />
+      <img
+        loading="lazy"
+        src="/images/s12-map.webp"
+        class="w-100"
+        alt="德林天行_google地圖位置"
+      />
     </div>
   </div>
   <div class="mob">
     <div class="top_box">
       <div>
         <div class="title_box">
-          <img src="/images/s12-mob-contact.webp" class="w-100" alt="德林天行" />
-          <img src="/images/s12-mob-text.webp" alt="德林天行" />
-          <img src="/images/butterfly.webp" alt="德林天行" />
+          <img
+            loading="lazy"
+            src="/images/s12-mob-contact.webp"
+            class="w-100"
+            alt="德林天行"
+          />
+          <img loading="lazy" src="/images/s12-mob-text.webp" alt="德林天行" />
+          <img loading="lazy" src="/images/butterfly.webp" alt="德林天行" />
         </div>
-        <form action="" class="form-box mb-4">
+        <form id="mobForm" class="form-box mb-4 myForm">
           <label class="form-row">
             <span class="label-text">姓名</span>
-            <input type="text" />
+            <input type="text" name="name" />
           </label>
 
           <label class="form-row">
             <span class="label-text">手機</span>
-            <input type="text" />
+            <input type="text" name="phone" />
           </label>
 
           <label class="form-row">
             <span class="label-text">信箱</span>
-            <input type="text" />
+            <input type="text" name="email" />
           </label>
 
           <div class="form-row">
@@ -100,11 +111,24 @@
               >
             </div>
           </div>
+          <button type="submit">送出</button>
         </form>
       </div>
     </div>
     <div class="map">
-      <img src="/images/s12-mob-map.webp" class="w-100" alt="德林天行_google地圖位置">
+      <img
+        loading="lazy"
+        src="/images/s12-mob-map.webp"
+        class="w-100"
+        alt="德林天行_google地圖位置"
+      />
+    </div>
+  </div>
+
+  <div class="pop">
+    <div>
+      <img src="/images/s9-logo.webp" alt="德林天行" />
+      <p>已成功送出表單，非常感謝您的回覆！</p>
     </div>
   </div>
 </div>
