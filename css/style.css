@@ -381,13 +381,14 @@ img {
 .sec7 .right_box {
   width: 45%;
   margin: 50px 0;
-  aspect-ratio: 190/221;
+  aspect-ratio: 19/25;
 }
 
-/* .sec7 .right_box img {
-  height: 100%;
+.sec7 .right_box img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
-} */
+}
 
 .sec8 .web {
   width: 100%;

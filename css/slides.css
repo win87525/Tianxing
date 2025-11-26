@@ -20,6 +20,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 .fade-slide .text_card {
   position: absolute;
   bottom: 0;
@@ -29,31 +30,22 @@
   padding: 5%;
   background-color: rgba(0, 0, 0, 0.466);
 }
-/* card2 第二種樣式 */
-.fade-slide .text_card.text_card2 {
-  width: 90%;
-  max-width: 800px;
-  background-color: #1f2a66;
-  display: grid;
-  grid-template-columns: 3fr 7fr;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.fade-slide .text_card.text_card2 img {
-  width: 100%;
-  height: auto;
-}
+
+
+
 /* text_card 基本樣式：開始時透明 + 往下 */
 .text_card img,
 .text_card p {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  transition-delay: 0.5s; /* 稍微延遲，可自行調整 */
+  transition-delay: 0.5s;
+  /* 稍微延遲，可自行調整 */
 }
+
 .text_card p {
-  transition-delay: 0.7s; /* 稍微延遲，可自行調整 */
+  transition-delay: 0.7s;
+  /* 稍微延遲，可自行調整 */
 }
 
 /* active 的 slide 文字要淡入 + 往上歸位 */
@@ -72,6 +64,7 @@
 .fade-slider:hover .fade-next {
   opacity: 1;
 }
+
 .fade-prev,
 .fade-next {
   position: absolute;
@@ -88,6 +81,7 @@
   transition: 0.3s all;
   opacity: 0;
 }
+
 .fade-prev:hover,
 .fade-next:hover {
   background: rgba(0, 0, 0, 0.5);
@@ -96,6 +90,7 @@
 .fade-prev {
   left: 10px;
 }
+
 .fade-next {
   right: 10px;
 }
@@ -111,4 +106,125 @@
 .fade-slide.active {
   opacity: 1;
   z-index: 2;
+}
+
+
+/* s7 輪播的第二種樣式 */
+.fade-slide .text_card.text_card2 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #1f2a66;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-slide .text_card.text_card2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* s7第一張圖沒有字，所以要100% */
+.sec7 .right_box .fade-slide:first-child>img {
+  height: 100%;
+}
+
+.sec7 .right_box .fade-slide>img {
+  height: 88%;
+}
+
+.sec7 .right_box .fade-slide .text_card.text_card2 {
+  height: 12%;
+}
+
+@media (width<1024px) {
+  .sec7 .right_box .fade-slide>img {
+    height: 80%;
+  }
+
+  .sec7 .right_box .fade-slide .text_card.text_card2 {
+    height: 20%;
+  }
+
+}
+
+@media (width<769px) {
+  .sec7 .right_box .fade-slide>img {
+    height: 90%;
+  }
+
+  .sec7 .right_box .fade-slide .text_card.text_card2 {
+    height: 10%;
+  }
+
+}
+
+@media (width<550px) {
+  .sec7 .right_box .fade-slide>img {
+    height: 80%;
+  }
+
+  .sec7 .right_box .fade-slide .text_card.text_card2 {
+    height: 20%;
+  }
+}
+
+
+/* s8建案名稱 */
+.sec8 .fade-slide .case_name {
+  position: absolute;
+  padding: 5px 10px;
+  padding-left: 20px;
+  font-size: 15px;
+  background-color: #000000a8;
+  right: 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: 0.5s;
+  clip-path: polygon(0 1%, 100% 1%, 100% 50%, 100% 100%, 0 100%, 10% 50%);
+}
+
+.sec8 .fade-slide .case_name.top_name {
+  top: 44%;
+}
+
+@media (width<1025px) {
+  .sec8 .fade-slide .case_name.top_name {
+    top: 42%;
+  }
+}
+
+.sec8 .fade-slide .case_name.bot_name {
+  bottom: 15px;
+}
+
+/* s9建案名稱 */
+.sec9 .fade-slide .case_name {
+  position: absolute;
+  padding: 8px 12px;
+  padding-left: 25px;
+  background-color: #000000a8;
+  right: 0;
+  bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: 0.5s;
+  clip-path: polygon(0 1%, 100% 1%, 100% 50%, 100% 100%, 0 100%, 10% 50%);
+}
+
+.sec8 .fade-slide.active .case_name,
+.sec9 .fade-slide.active .case_name {
+  opacity: 1;
+  transform: translateY(0);
 }

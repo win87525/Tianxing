@@ -264,7 +264,10 @@
   .sec7 .right_box {
     width: 100%;
     margin: 0;
+    aspect-ratio: 190/285;
   }
+
+
 
   .sec7 .right_box .text_card p {
     font-size: 14px;
