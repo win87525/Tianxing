@@ -122,50 +122,6 @@ img {
   }
 }
 
-.sec11 {
-  width: 100%;
-  position: relative;
-  background: linear-gradient(205deg, #063152 0%, #0f73b6 60%, #00a3ff 100%);
-  padding-top: 10vh;
-}
-
-.sec11 .web .text_box {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.sec11 .web {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: end;
-  padding: 80px;
-  padding-bottom: 0;
-}
-
-.sec11 .web .anniversary_logo {
-  position: absolute;
-  right: 40px;
-  top: 40px;
-  width: 10%;
-  max-width: 200px;
-}
-
-@media (768px<width<1200px) {
-  .sec11 .web {
-    padding-top: 5vh;
-  }
-
-  .sec11 .web .anniversary_logo {
-    top: 40px;
-    right: 80px;
-  }
-}
-
 .sec2 .web {
   width: 100%;
   max-width: 1920px;
@@ -443,8 +399,6 @@ img {
 }
 
 .sec9 .web .left_box img {
-  /* object-fit: cover; */
-  /* height: 100%; */
   width: 100%;
 }
 
@@ -456,7 +410,7 @@ img {
   justify-content: end;
   align-items: center;
   position: relative;
-  background-color: #ebf3fb;
+  /* background-color: #ebf3fb; */
 }
 
 .sec9 .web .right_box .text_box {
@@ -470,9 +424,82 @@ img {
   max-width: 200px;
 }
 
-.sec12 {
-  /* position: relative; */
-  /* width: 100%; */
+.sec10 .web {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0;
+  background: linear-gradient(to right,
+      transparent 0%,
+      transparent 55%,
+      #ebf3fb 55%,
+      #ebf3fb 100%);
+}
+
+
+.sec10 .web .left_box {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec10 .web .left_box>div {
+  width: 60%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sec10 .web .right_box {
+  width: 55%;
+  aspect-ratio: 166/113;
+}
+
+.sec11 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(205deg, #063152 0%, #0f73b6 60%, #00a3ff 100%);
+  padding-top: 10vh;
+}
+
+.sec11 .web .text_box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sec11 .web {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  padding: 80px;
+  padding-bottom: 0;
+}
+
+.sec11 .web .anniversary_logo {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 10%;
+  max-width: 200px;
+}
+
+@media (768px<width<1200px) {
+  .sec11 .web {
+    padding-top: 5vh;
+  }
+
+  .sec11 .web .anniversary_logo {
+    top: 40px;
+    right: 80px;
+  }
 }
 
 .sec12 .web {
@@ -569,6 +596,37 @@ img {
   transform: scale(1.1);
 }
 
+.sec12 .web .map {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec12 .web .map a {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sec12 .web .map img {
+  transform: scale(1.4);
+  transition: 0.4s all;
+}
+
+.sec12 .web .map img:hover {
+  transform: scale(1.5);
+}
+
+.sec12 .web .map p {
+  font-size: 15px;
+  color: #a0a0a0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .sec12 .pop {
   width: 100%;
   height: 100%;
@@ -587,8 +645,9 @@ img {
   opacity: 0;
   transition: opacity .5s ease;
 }
+
 .sec12 .pop.show {
-  display: grid; 
+  display: grid;
   opacity: 1;
 }
 
