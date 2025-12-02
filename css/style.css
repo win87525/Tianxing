@@ -598,25 +598,8 @@ img {
 
 .sec12 .web .map {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
 }
 
-.sec12 .web .map a {
-  overflow: hidden;
-  width: 100%;
-}
-
-.sec12 .web .map img {
-  transform: scale(1.4);
-  transition: 0.4s all;
-}
-
-.sec12 .web .map img:hover {
-  transform: scale(1.5);
-}
 
 .sec12 .web .map p {
   font-size: 15px;
@@ -624,6 +607,7 @@ img {
   letter-spacing: 2px;
   font-weight: 400;
   font-style: italic;
+  text-align: end;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

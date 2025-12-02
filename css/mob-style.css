@@ -479,9 +479,6 @@
 
   .sec12 .mob .map {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
   }
 
@@ -496,16 +493,6 @@
     font-weight: 400;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .sec12 .mob .map a {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .sec12 .mob .map img {
-    width: 100%;
-    transform: scale(1.8);
   }
 }
 
